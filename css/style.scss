@@ -31,6 +31,7 @@
     --space-6: 1.5rem;
     --space-7: 1.75rem;
     --space-8: 2rem;
+    --space-9: 2.25rem;
     --space-10: 2.5rem;
     --space-12: 3rem;
     --space-16: 4rem;
@@ -110,10 +111,22 @@
 }
 
 /* -------------------- Redefining global font-size -------------------- */
+// html {
+//     font-size: 93.75%;
+
+//     @media (min-width: 40em) {
+//         font-size: 100%;
+//     }
+// }
+
 html {
-    font-size: 93.75%;
+    font-size: 87.5%;
 
     @media (min-width: 40em) {
+        font-size: 93.75%;
+    }
+
+    @media (min-width: 60em) {
         font-size: 100%;
     }
 }
@@ -377,4 +390,104 @@ html {
 
 .delay-2 {
     animation-delay: 200ms;
+}
+
+.padding {
+    &-top-xs {
+        padding-top: var(--space-4);
+    }
+    &-top-sm {
+        padding-top: var(--space-6);
+    }
+    &-top-md {
+        padding-top: var(--space-8);
+    }
+    &-top-lg {
+        padding-top: var(--space-10);
+    }
+    &-top-xl {
+        padding-top: var(--space-16);
+    }
+
+    &-bottom-xs {
+        padding-bottom: var(--space-4);
+    }
+    &-bottom-sm {
+        padding-bottom: var(--space-6);
+    }
+    &-bottom-md {
+        padding-bottom: var(--space-8);
+    }
+    &-bottom-lg {
+        padding-bottom: var(--space-10);
+    }
+    &-bottom-xl {
+        padding-bottom: var(--space-16);
+    }
+
+    &-block-xs {
+        padding-block: var(--space-4);
+    }
+    &-block-sm {
+        padding-block: var(--space-6);
+    }
+    &-block-md {
+        padding-block: var(--space-8);
+    }
+    &-block-lg {
+        padding-block: var(--space-10);
+    }
+    &-block-xl {
+        padding-block: var(--space-16);
+    }
+}
+
+.margin {
+    &-top-xs {
+        margin-top: var(--space-4);
+    }
+    &-top-sm {
+        margin-top: var(--space-6);
+    }
+    &-top-md {
+        margin-top: var(--space-8);
+    }
+    &-top-lg {
+        margin-top: var(--space-10);
+    }
+    &-top-xl {
+        margin-top: var(--space-16);
+    }
+
+    &-bottom-xs {
+        margin-bottom: var(--space-4);
+    }
+    &-bottom-sm {
+        margin-bottom: var(--space-6);
+    }
+    &-bottom-md {
+        margin-bottom: var(--space-8);
+    }
+    &-bottom-lg {
+        margin-bottom: var(--space-10);
+    }
+    &-bottom-xl {
+        margin-bottom: var(--space-16);
+    }
+
+    &-block-xs {
+        margin-block: var(--space-4);
+    }
+    &-block-sm {
+        margin-block: var(--space-6);
+    }
+    &-block-md {
+        margin-block: var(--space-8);
+    }
+    &-block-lg {
+        margin-block: var(--space-10);
+    }
+    &-block-xl {
+        margin-block: var(--space-16);
+    }
 }
