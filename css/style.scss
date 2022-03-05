@@ -59,9 +59,10 @@
     --fs-8xl: 4.5rem;
     --fs-9xl: 6rem;
 
-    --fw-regular: regular;
-    --fw-medium: medium;
-    --fw-bold: bold;
+    --fw-thin: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
 
     --lineHeight-shorter: 125%;
     --lineHeight-short: 140%;
@@ -109,11 +110,42 @@
     font-family: var(--ff-default);
 }
 
+/* ---------- Redefining global font-size ---------- */
+html {
+    font-size: 93.75%;
+
+    @media (min-width: 40em) {
+        font-size: 100%;
+    }
+}
+
 .container {
     --max-width: 85rem;
     width: 90%;
     max-width: var(--max-width);
     margin-inline: auto;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    outline: none;
+    border: none;
+
+    background: darkmagenta;
+    color: white;
+    border-radius: 99999px;
+    padding: 0.75em 1.25em;
+    min-width: 15em;
+    text-align: center;
+
+    &:focus,
+    &:hover {
+        transition: filter 300ms ease;
+        filter: grayscale(100%);
+    }
 }
 
 .spacing {
@@ -126,28 +158,23 @@
     }
 }
 
-.btn {
-    cursor: pointer;
-    display: inline-block;
+/* ---------- Utility Classes ---------- */
+.uppercase {
     text-transform: uppercase;
-    font-weight: bold;
-    outline: none;
-    border: none;
+}
 
-    background: linear-gradient(135deg, #b11e20, #d6442e);
-    color: white;
-    border-radius: 99999px;
-    padding: 0.75em 1.25em;
-    min-width: 15em;
-    text-align: center;
+.bold {
+    font-weight: var(--fw-bold);
+}
 
-    &:focus,
-    &:hover {
-        transition: filter 300ms ease;
-        filter: grayscale(100%);
-    }
+.thin {
+    font-weight: var(--fw-thin);
+}
 
-    &.thin {
-        font-weight: 400;
+.flow {
+    --space: 1rem;
+
+    > * + * {
+        margin-top: var(--space);
     }
 }

@@ -114,9 +114,10 @@ select {
   --fs-7xl: 4rem;
   --fs-8xl: 4.5rem;
   --fs-9xl: 6rem;
-  --fw-regular: regular;
-  --fw-medium: medium;
-  --fw-bold: bold;
+  --fw-thin: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
   --lineHeight-shorter: 125%;
   --lineHeight-short: 140%;
   --lineHeight-base: 160%;
@@ -157,18 +158,21 @@ select {
   font-family: var(--ff-default);
 }
 
+/* ---------- Redefining global font-size ---------- */
+html {
+  font-size: 93.75%;
+}
+@media (min-width: 40em) {
+  html {
+    font-size: 100%;
+  }
+}
+
 .container {
   --max-width: 85rem;
   width: 90%;
   max-width: var(--max-width);
   margin-inline: auto;
-}
-
-.spacing-p {
-  padding-block: var(--section-spacing);
-}
-.spacing-m {
-  margin-block: var(--section-spacing);
 }
 
 .btn {
@@ -178,7 +182,7 @@ select {
   font-weight: bold;
   outline: none;
   border: none;
-  background: linear-gradient(135deg, #b11e20, #d6442e);
+  background: darkmagenta;
   color: white;
   border-radius: 99999px;
   padding: 0.75em 1.25em;
@@ -189,8 +193,32 @@ select {
   transition: filter 300ms ease;
   filter: grayscale(100%);
 }
-.btn.thin {
-  font-weight: 400;
+
+.spacing-p {
+  padding-block: var(--section-spacing);
+}
+.spacing-m {
+  margin-block: var(--section-spacing);
+}
+
+/* ---------- Utility Classes ---------- */
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: var(--fw-bold);
+}
+
+.thin {
+  font-weight: var(--fw-thin);
+}
+
+.flow {
+  --space: 1rem;
+}
+.flow > * + * {
+  margin-top: var(--space);
 }
 
 /*# sourceMappingURL=style.css.map */
