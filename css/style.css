@@ -1,3 +1,67 @@
+/* General rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set core html behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a {
+  text-decoration-skip-ink: auto;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
 :root {
   /* ---------- Colors ---------- */
   --clr-success: #04d361;
@@ -90,10 +154,43 @@
   }
 }
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--ff-default);
+}
+
+.container {
+  --max-width: 85rem;
+  width: 90%;
+  max-width: var(--max-width);
+  margin-inline: auto;
+}
+
+.spacing-p {
+  padding-block: var(--section-spacing);
+}
+.spacing-m {
+  margin-block: var(--section-spacing);
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  background: linear-gradient(135deg, #b11e20, #d6442e);
+  color: white;
+  border-radius: 99999px;
+  padding: 0.75em 1.25em;
+  min-width: 15em;
+  text-align: center;
+}
+.btn:focus, .btn:hover {
+  transition: filter 300ms ease;
+  filter: grayscale(100%);
+}
+.btn.thin {
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */

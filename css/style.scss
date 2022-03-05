@@ -1,3 +1,5 @@
+@import "reset";
+
 :root {
     /* ---------- Colors ---------- */
     --clr-success: #04d361;
@@ -104,8 +106,48 @@
 }
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+    font-family: var(--ff-default);
+}
+
+.container {
+    --max-width: 85rem;
+    width: 90%;
+    max-width: var(--max-width);
+    margin-inline: auto;
+}
+
+.spacing {
+    &-p {
+        padding-block: var(--section-spacing);
+    }
+
+    &-m {
+        margin-block: var(--section-spacing);
+    }
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: bold;
+    outline: none;
+    border: none;
+
+    background: linear-gradient(135deg, #b11e20, #d6442e);
+    color: white;
+    border-radius: 99999px;
+    padding: 0.75em 1.25em;
+    min-width: 15em;
+    text-align: center;
+
+    &:focus,
+    &:hover {
+        transition: filter 300ms ease;
+        filter: grayscale(100%);
+    }
+
+    &.thin {
+        font-weight: 400;
+    }
 }
