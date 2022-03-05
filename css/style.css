@@ -1,8 +1,99 @@
+:root {
+  /* ---------- Colors ---------- */
+  --clr-success: #04d361;
+  --clr-danger: #cc2937;
+  --clr-warning: #fba94c;
+  --clr-white: #ffffff;
+  --clr-black: #000000;
+  --clr-grey-100: #e1e1e6;
+  --clr-grey-200: #c4c4cc;
+  --clr-grey-300: #8d8d99;
+  --clr-grey-400: #7c7c8a;
+  --clr-grey-500: #505059;
+  --clr-grey-600: #323238;
+  --clr-grey-700: #29292e;
+  --clr-grey-800: #202024;
+  --clr-grey-900: #121214;
+  --clr-grey-950: #09090a;
+  /* ---------- Spaces ---------- */
+  --section-spacing: 4rem;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-7: 1.75rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-40: 10rem;
+  --space-64: 16rem;
+  --space-80: 20rem;
+  /* ---------- Fonts ---------- */
+  --ff-default: Roboto, sans-serif;
+  --ff-highlight: Roboto, sans-serif;
+  --ff-reading: Spectral, serif;
+  --ff-code: Fira code, monospace;
+  --fs-xxs: 0.625rem;
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-md: 1rem;
+  --fs-lg: 1.125rem;
+  --fs-xl: 1.25rem;
+  --fs-2xl: 1.5rem;
+  --fs-4xl: 2rem;
+  --fs-5xl: 2.25rem;
+  --fs-6xl: 3rem;
+  --fs-7xl: 4rem;
+  --fs-8xl: 4.5rem;
+  --fs-9xl: 6rem;
+  --fw-regular: regular;
+  --fw-medium: medium;
+  --fw-bold: bold;
+  --lineHeight-shorter: 125%;
+  --lineHeight-short: 140%;
+  --lineHeight-base: 160%;
+  --lineHeight-tall: 180%;
+  /* ---------- Borders ---------- */
+  --borderWidth-thin: 1px;
+  --borderWidth-medium: 1.5px;
+  --borderWidth-thick: 2px;
+  --borderWidth-heavy: 4px;
+  --radii-xs: 2.5px;
+  --radii-sm: 5px;
+  --radii-md: 10px;
+  --radii-lg: 20px;
+  --radii-full: 99999px;
+  /* ---------- Opacity ---------- */
+  --opacity-default: 100%;
+  --opacity-semiOpaque: 90%;
+  --opacity-intense: 75%;
+  --opacity-medium: 50%;
+  --opacity-light: 25%;
+  --opacity-semiTransparent: 10%;
+  /* ---------- Z-Index ---------- */
+  --zIndices-overlay: 9995;
+  --zIndices-modal: 9999;
+}
+
+@media (min-width: 45em) {
+  :root {
+    --section-spacing: 5rem;
+  }
+}
+@media (min-width: 100em) {
+  :root {
+    --section-spacing: 6rem;
+  }
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
