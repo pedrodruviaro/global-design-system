@@ -40,10 +40,8 @@
     --space-80: 20rem;
 
     /* ---------- Fonts ---------- */
-    --ff-default: Roboto, sans-serif;
-    --ff-highlight: Roboto, sans-serif;
-    --ff-reading: Spectral, serif;
-    --ff-code: Fira code, monospace;
+    --ff-default: "Roboto", sans-serif;
+    --ff-highlight: "Roboto", sans-serif;
 
     --fs-xxs: 0.625rem;
     --fs-xs: 0.75rem;
@@ -75,11 +73,11 @@
     --borderWidth-thick: 2px;
     --borderWidth-heavy: 4px;
 
-    --radii-xs: 2.5px;
-    --radii-sm: 5px;
-    --radii-md: 10px;
-    --radii-lg: 20px;
-    --radii-full: 99999px;
+    --radius-xs: 2.5px;
+    --radius-sm: 5px;
+    --radius-md: 10px;
+    --radius-lg: 20px;
+    --radius-full: 99999px;
 
     /* ---------- Opacity ---------- */
     --opacity-default: 100%;
@@ -90,8 +88,8 @@
     --opacity-semiTransparent: 10%;
 
     /* ---------- Z-Index ---------- */
-    --zIndices-overlay: 9995;
-    --zIndices-modal: 9999;
+    --z-overlay: 995;
+    --z-modal: 999;
 }
 
 @media (min-width: 45em) {
@@ -106,6 +104,7 @@
     }
 }
 
+/* ---------- Global font-family ---------- */
 * {
     font-family: var(--ff-default);
 }
