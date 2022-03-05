@@ -491,3 +491,223 @@ html {
         margin-block: var(--space-16);
     }
 }
+
+.var-padding {
+    &-top-sm {
+        padding-top: 1rem;
+
+        @media (min-width: 45em) {
+            padding-top: 1.25rem;
+        }
+
+        @media (min-width: 70em) {
+            padding-top: 1.5rem;
+        }
+    }
+
+    &-top-md {
+        padding-top: 1.75rem;
+
+        @media (min-width: 45em) {
+            padding-top: 2rem;
+        }
+
+        @media (min-width: 70em) {
+            padding-top: 2.25rem;
+        }
+    }
+
+    &-top-lg {
+        padding-top: 2.25rem;
+
+        @media (min-width: 45em) {
+            padding-top: 2.5rem;
+        }
+
+        @media (min-width: 70em) {
+            padding-top: 2.75rem;
+        }
+    }
+
+    &-bottom-sm {
+        padding-bottom: 1rem;
+
+        @media (min-width: 45em) {
+            padding-bottom: 1.25rem;
+        }
+
+        @media (min-width: 70em) {
+            padding-bottom: 1.5rem;
+        }
+    }
+
+    &-bottom-md {
+        padding-bottom: 1.75rem;
+
+        @media (min-width: 45em) {
+            padding-bottom: 2rem;
+        }
+
+        @media (min-width: 70em) {
+            padding-bottom: 2.25rem;
+        }
+    }
+
+    &-bottom-lg {
+        padding-bottom: 2.25rem;
+
+        @media (min-width: 45em) {
+            padding-bottom: 2.5rem;
+        }
+
+        @media (min-width: 70em) {
+            padding-bottom: 2.75rem;
+        }
+    }
+
+    &-block-sm {
+        padding-block: 1rem;
+
+        @media (min-width: 45em) {
+            padding-block: 1.25rem;
+        }
+
+        @media (min-width: 70em) {
+            padding-block: 1.5rem;
+        }
+    }
+
+    &-block-md {
+        padding-block: 1.75rem;
+
+        @media (min-width: 45em) {
+            padding-block: 2rem;
+        }
+
+        @media (min-width: 70em) {
+            padding-block: 2.25rem;
+        }
+    }
+
+    &-block-lg {
+        padding-block: 2.25rem;
+
+        @media (min-width: 45em) {
+            padding-block: 2.5rem;
+        }
+
+        @media (min-width: 70em) {
+            padding-block: 2.75rem;
+        }
+    }
+}
+
+.var-margin {
+    &-top-sm {
+        margin-top: 1rem;
+
+        @media (min-width: 45em) {
+            margin-top: 1.25rem;
+        }
+
+        @media (min-width: 70em) {
+            margin-top: 1.5rem;
+        }
+    }
+
+    &-top-md {
+        margin-top: 1.75rem;
+
+        @media (min-width: 45em) {
+            margin-top: 2rem;
+        }
+
+        @media (min-width: 70em) {
+            margin-top: 2.25rem;
+        }
+    }
+
+    &-top-lg {
+        margin-top: 2.25rem;
+
+        @media (min-width: 45em) {
+            margin-top: 2.5rem;
+        }
+
+        @media (min-width: 70em) {
+            margin-top: 2.75rem;
+        }
+    }
+
+    &-bottom-sm {
+        margin-bottom: 1rem;
+
+        @media (min-width: 45em) {
+            margin-bottom: 1.25rem;
+        }
+
+        @media (min-width: 70em) {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &-bottom-md {
+        margin-bottom: 1.75rem;
+
+        @media (min-width: 45em) {
+            margin-bottom: 2rem;
+        }
+
+        @media (min-width: 70em) {
+            margin-bottom: 2.25rem;
+        }
+    }
+
+    &-bottom-lg {
+        margin-bottom: 2.25rem;
+
+        @media (min-width: 45em) {
+            margin-bottom: 2.5rem;
+        }
+
+        @media (min-width: 70em) {
+            margin-bottom: 2.75rem;
+        }
+    }
+
+    &-block-sm {
+        margin-block: 1rem;
+
+        @media (min-width: 45em) {
+            margin-block: 1.25rem;
+        }
+
+        @media (min-width: 70em) {
+            margin-block: 1.5rem;
+        }
+    }
+
+    &-block-md {
+        margin-block: 1.75rem;
+
+        @media (min-width: 45em) {
+            margin-block: 2rem;
+        }
+
+        @media (min-width: 70em) {
+            margin-block: 2.25rem;
+        }
+    }
+
+    &-block-lg {
+        margin-block: 2.25rem;
+
+        @media (min-width: 45em) {
+            margin-block: 2.5rem;
+        }
+
+        @media (min-width: 70em) {
+            margin-block: 2.75rem;
+        }
+    }
+}
