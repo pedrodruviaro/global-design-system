@@ -185,6 +185,27 @@ html {
     }
 }
 
+.custom-list {
+    --gap: 1rem;
+
+    display: grid;
+    gap: var(--gap);
+
+    li {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        &::before {
+            content: "";
+            width: 6.5px;
+            aspect-ratio: 1;
+            background-color: var(--clr-grey-500);
+            border-radius: var(--radius-full);
+        }
+    }
+}
+
 .spacing {
     &-p {
         padding-block: var(--section-spacing);

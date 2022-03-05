@@ -219,6 +219,24 @@ html {
   font-weight: var(--fw-regular);
 }
 
+.custom-list {
+  --gap: 1rem;
+  display: grid;
+  gap: var(--gap);
+}
+.custom-list li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.custom-list li::before {
+  content: "";
+  width: 6.5px;
+  aspect-ratio: 1;
+  background-color: var(--clr-grey-500);
+  border-radius: var(--radius-full);
+}
+
 .spacing-p {
   padding-block: var(--section-spacing);
 }
