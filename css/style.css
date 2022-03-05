@@ -196,12 +196,12 @@ html {
   filter: brightness(0.75);
 }
 .btn-primary {
-  --bg: #7e29af;
+  --bg: var(--clr-warning);
   color: var(--clr-white);
   background: var(--bg);
 }
 .btn-outlined {
-  --bg: #1d406b;
+  --bg: var(--clr-danger);
   border: var(--borderWidth-medium) solid var(--bg);
 }
 .btn-outlined:focus, .btn-outlined:hover {
@@ -211,12 +211,12 @@ html {
   background-color: var(--bg);
 }
 .btn-rounded {
-  --bg: #04d361;
+  --bg: var(--clr-success);
   background-color: var(--bg);
   border-radius: var(--radius-full);
 }
 .btn-lighter {
-  font-weight: 400;
+  font-weight: var(--fw-regular);
 }
 
 .spacing-p {
