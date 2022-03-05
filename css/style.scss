@@ -1,7 +1,7 @@
 @import "reset";
 
 :root {
-    /* ---------- Colors ---------- */
+    /* -------------------- Colors -------------------- */
     --clr-success: #04d361;
     --clr-danger: #cc2937;
     --clr-warning: #fba94c;
@@ -20,7 +20,7 @@
     --clr-grey-900: #121214;
     --clr-grey-950: #09090a;
 
-    /* ---------- Spaces ---------- */
+    /* -------------------- Spaces -------------------- */
     --section-spacing: 4rem;
 
     --space-1: 0.25rem;
@@ -39,7 +39,7 @@
     --space-64: 16rem;
     --space-80: 20rem;
 
-    /* ---------- Fonts ---------- */
+    /* -------------------- Fonts -------------------- */
     --ff-default: "Roboto", sans-serif;
     --ff-highlight: "Roboto", sans-serif;
 
@@ -67,7 +67,7 @@
     --lineHeight-base: 160%;
     --lineHeight-tall: 180%;
 
-    /* ---------- Borders ---------- */
+    /* -------------------- Borders -------------------- */
     --borderWidth-thin: 1px;
     --borderWidth-medium: 1.5px;
     --borderWidth-thick: 2px;
@@ -79,7 +79,7 @@
     --radius-lg: 20px;
     --radius-full: 99999px;
 
-    /* ---------- Opacity ---------- */
+    /* -------------------- Opacity -------------------- */
     --opacity-default: 100%;
     --opacity-semiOpaque: 90%;
     --opacity-intense: 75%;
@@ -87,7 +87,7 @@
     --opacity-light: 25%;
     --opacity-semiTransparent: 10%;
 
-    /* ---------- Z-Index ---------- */
+    /* -------------------- Z-Index -------------------- */
     --z-overlay: 995;
     --z-modal: 999;
 }
@@ -104,12 +104,12 @@
     }
 }
 
-/* ---------- Global font-family ---------- */
+/* -------------------- Global font-family -------------------- */
 * {
     font-family: var(--ff-default);
 }
 
-/* ---------- Redefining global font-size ---------- */
+/* -------------------- Redefining global font-size -------------------- */
 html {
     font-size: 93.75%;
 
@@ -118,7 +118,7 @@ html {
     }
 }
 
-/* ---------- Utility Classes ---------- */
+/* -------------------- Components -------------------- */
 
 .container {
     --max-width: 85rem;
@@ -206,6 +206,7 @@ html {
     }
 }
 
+/* -------------------- Utility Classes -------------------- */
 .spacing {
     &-p {
         padding-block: var(--section-spacing);
@@ -324,7 +325,7 @@ html {
     }
 }
 
-/* ---------- Animations ---------- */
+/* -------------------- Animations -------------------- */
 @keyframes up {
     from {
         opacity: 0;
