@@ -1,5 +1,7 @@
 {
     "scripts": {
-        "dev": "sass --watch css/style.scss css/style.css"
+        "dev": "sass --watch css/style.scss css/styles.css",
+        "scss": "sass --watch css/style.scss css/develop.scss",
+        "build": "sass --watch css/style.scss css/design_system.css --style compressed"
     }
 }
