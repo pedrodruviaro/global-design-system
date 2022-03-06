@@ -42,7 +42,7 @@
 
     /* -------------------- Fonts -------------------- */
     --ff-default: "Roboto", sans-serif;
-    --ff-highlight: "Roboto", sans-serif;
+    --ff-highlight: sans-serif;
 
     --fs-xxs: 0.625rem;
     --fs-xs: 0.75rem;
@@ -99,7 +99,7 @@
     }
 }
 
-@media (min-width: 100em) {
+@media (min-width: 70em) {
     :root {
         --section-spacing: 6rem;
     }
@@ -254,58 +254,58 @@ html {
     font-weight: var(--fw-thin);
 }
 
-.font-xxs {
+.fs-xxs {
     font-size: var(--fs-xxs);
 }
 
-.font-xs {
+.fs-xs {
     font-size: var(--fs-xs);
 }
 
-.font-sm {
+.fs-sm {
     font-size: var(--fs-sm);
 }
 
-.font-md {
+.fs-md {
     font-size: var(--fs-md);
 }
 
-.font-lg {
+.fs-lg {
     font-size: var(--fs-lg);
 }
 
-.font-xl {
+.fs-xl {
     font-size: var(--fs-xl);
 }
 
-.font-2xl {
+.fs-2xl {
     font-size: var(--fs-2xl);
 }
 
-.font-4xl {
+.fs-4xl {
     font-size: var(--fs-4xl);
 }
 
-.font-5xl {
+.fs-5xl {
     font-size: var(--fs-5xl);
 }
 
-.font-6xl {
+.fs-6xl {
     font-size: var(--fs-6xl);
     line-height: var(--lineHeight-shorter);
 }
 
-.font-7xl {
+.fs-7xl {
     font-size: var(--fs-7xl);
     line-height: var(--lineHeight-shorter);
 }
 
-.font-8xl {
+.fs-8xl {
     font-size: var(--fs-8xl);
     line-height: var(--lineHeight-shorter);
 }
 
-.font-9xl {
+.fs-9xl {
     font-size: var(--fs-9xl);
     line-height: var(--lineHeight-shorter);
 }
@@ -439,56 +439,6 @@ html {
     }
     &-block-xl {
         padding-block: var(--space-16);
-    }
-}
-
-.margin {
-    &-top-xs {
-        margin-top: var(--space-4);
-    }
-    &-top-sm {
-        margin-top: var(--space-6);
-    }
-    &-top-md {
-        margin-top: var(--space-8);
-    }
-    &-top-lg {
-        margin-top: var(--space-10);
-    }
-    &-top-xl {
-        margin-top: var(--space-16);
-    }
-
-    &-bottom-xs {
-        margin-bottom: var(--space-4);
-    }
-    &-bottom-sm {
-        margin-bottom: var(--space-6);
-    }
-    &-bottom-md {
-        margin-bottom: var(--space-8);
-    }
-    &-bottom-lg {
-        margin-bottom: var(--space-10);
-    }
-    &-bottom-xl {
-        margin-bottom: var(--space-16);
-    }
-
-    &-block-xs {
-        margin-block: var(--space-4);
-    }
-    &-block-sm {
-        margin-block: var(--space-6);
-    }
-    &-block-md {
-        margin-block: var(--space-8);
-    }
-    &-block-lg {
-        margin-block: var(--space-10);
-    }
-    &-block-xl {
-        margin-block: var(--space-16);
     }
 }
 
