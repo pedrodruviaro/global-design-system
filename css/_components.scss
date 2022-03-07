@@ -75,13 +75,17 @@
         display: flex;
         align-items: center;
         gap: 1rem;
+    }
 
-        &::before {
-            content: "";
-            width: 6.5px;
-            aspect-ratio: 1;
-            background-color: var(--clr-grey-500);
-            border-radius: var(--radius-full);
+    &.dots {
+        li {
+            &::before {
+                content: "";
+                width: 6.5px;
+                aspect-ratio: 1;
+                background-color: #a720cc;
+                border-radius: var(--radius-full);
+            }
         }
     }
 }

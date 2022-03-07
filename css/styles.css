@@ -215,11 +215,11 @@ select {
   align-items: center;
   gap: 1rem;
 }
-.custom-list li::before {
+.custom-list.dots li::before {
   content: "";
   width: 6.5px;
   aspect-ratio: 1;
-  background-color: var(--clr-grey-500);
+  background-color: #a720cc;
   border-radius: var(--radius-full);
 }
 
