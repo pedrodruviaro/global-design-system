@@ -1,0 +1,34 @@
+/* -------------------- Utility Classes -------------------- */
+.spacing {
+    &-p {
+        padding-block: var(--section-spacing);
+    }
+
+    &-m {
+        margin-block: var(--section-spacing);
+    }
+}
+
+.flow {
+    --space: 1rem;
+
+    > * + * {
+        margin-top: var(--space);
+    }
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.bold {
+    font-weight: var(--fw-bold);
+}
+
+.thin {
+    font-weight: var(--fw-thin);
+}

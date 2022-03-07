@@ -1,0 +1,109 @@
+/* -------------------- Global font-family -------------------- */
+* {
+    font-family: var(--ff-default);
+}
+
+/* -------------------- Redefining global font-size -------------------- */
+// html {
+//     font-size: 93.75%;
+
+//     @media (min-width: 40em) {
+//         font-size: 100%;
+//     }
+// }
+
+html {
+    font-size: 87.5%;
+
+    @media (min-width: 40em) {
+        font-size: 93.75%;
+    }
+
+    @media (min-width: 60em) {
+        font-size: 100%;
+    }
+}
+
+.fs-xxs {
+    font-size: var(--fs-xxs);
+}
+
+.fs-xs {
+    font-size: var(--fs-xs);
+}
+
+.fs-sm {
+    font-size: var(--fs-sm);
+}
+
+.fs-md {
+    font-size: var(--fs-md);
+}
+
+.fs-lg {
+    font-size: var(--fs-lg);
+}
+
+.fs-xl {
+    font-size: var(--fs-xl);
+}
+
+.fs-2xl {
+    font-size: var(--fs-2xl);
+}
+
+.fs-4xl {
+    font-size: var(--fs-4xl);
+}
+
+.fs-5xl {
+    font-size: var(--fs-5xl);
+}
+
+.fs-6xl {
+    font-size: var(--fs-6xl);
+    line-height: var(--lineHeight-shorter);
+}
+
+.fs-7xl {
+    font-size: var(--fs-7xl);
+    line-height: var(--lineHeight-shorter);
+}
+
+.fs-8xl {
+    font-size: var(--fs-8xl);
+    line-height: var(--lineHeight-shorter);
+}
+
+.fs-9xl {
+    font-size: var(--fs-9xl);
+    line-height: var(--lineHeight-shorter);
+}
+
+.main-title {
+    font-size: var(--fs-4xl);
+    line-height: var(--lineHeight-shorter);
+    font-weight: var(--fw-bold);
+
+    @media (min-width: 45em) {
+        font-size: var(--fs-5xl);
+    }
+
+    @media (min-width: 70em) {
+        font-size: var(--fs-6xl);
+    }
+}
+
+.section-title {
+    font-size: var(--fs-2xl);
+    line-height: var(--lineHeight-shorter);
+    font-weight: var(--fw-bold);
+
+    @media (min-width: 45em) {
+        font-size: var(--fs-4xl);
+    }
+
+    @media (min-width: 70em) {
+        font-size: var(--fs-5xl);
+    }
+}
